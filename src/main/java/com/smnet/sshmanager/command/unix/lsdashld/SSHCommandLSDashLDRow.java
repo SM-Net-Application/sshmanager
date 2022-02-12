@@ -1,6 +1,6 @@
-package com.smnet.sshmanager.command.lsdashl;
+package com.smnet.sshmanager.command.unix.lsdashld;
 
-public class SSHCommandLSDashLRow {
+public class SSHCommandLSDashLDRow {
 
     private boolean directory;
 
@@ -8,7 +8,7 @@ public class SSHCommandLSDashLRow {
 
     private String name;
 
-    public SSHCommandLSDashLRow(boolean directory, String fullPath, char separator) {
+    public SSHCommandLSDashLDRow(boolean directory, String fullPath, char separator) {
 
         this.directory = directory;
         this.fullPath = fullPath;
