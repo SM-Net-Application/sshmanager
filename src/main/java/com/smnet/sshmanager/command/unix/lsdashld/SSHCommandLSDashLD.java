@@ -20,7 +20,9 @@ public class SSHCommandLSDashLD {
             String fullPath = columns[columns.length - index];
 
             while (!(fullPath.charAt(0) == '/'))
-                fullPath = columns[columns.length - --index].concat(fullPath);
+                fullPath = columns[columns.length - (++index)];
+
+            fullPath = row.substring(row.indexOf(fullPath));
 
             rows.add(new SSHCommandLSDashLDRow(row.charAt(0) == 'd', fullPath, '/'));
         }
